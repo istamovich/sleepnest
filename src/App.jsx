@@ -8,6 +8,7 @@ import NewsInfo from "./components/NewsInfo";
 import Collection from "./components/Collection";
 import About from "./pages/About";
 import Connection from "./pages/Connection";
+import Wishlist from "./pages/Wishlist";
 
 function Layout() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/perfect-3" element={<NewsInfo />} />
         <Route path="/about" element={<About />}></Route>
         <Route path="/contact" element={<Connection />}></Route>
+        <Route path="/wishlist" element={<Wishlist />}></Route>
       </Route>
     </Routes>
   );
