@@ -17,23 +17,23 @@ const Wishlist = () => {
   }, []);
 
   return (
-    <div className="container mx-auto py-10">
-      <h2 className="text-2xl font-semibold mb-4">Sevimlilar</h2>
+    <div className="container mx-auto px-4 py-10">
+      <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-center sm:text-left">Sevimlilar</h2>
 
       {wishlistItems.length === 0 ? (
-        <p className="text-gray-500">Sizda hozircha hech qanday sevimli mahsulot yo‘q.</p>
+        <p className="text-gray-500 text-center">Sizda hozircha hech qanday sevimli mahsulot yo‘q.</p>
       ) : (
-        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {wishlistItems.map((product) => (
             <li key={product.id} className="group relative">
               <Link to={`/product/${product.id}`} className="block">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-auto object-cover rounded-lg shadow-md transition duration-300 group-hover:scale-105"
+                  className="w-full aspect-square object-cover rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105"
                 />
               </Link>
-              <p className="mt-2 font-medium">{product.name}</p>
+              <p className="mt-2 text-sm sm:text-base font-medium text-center">{product.name}</p>
             </li>
           ))}
         </ul>

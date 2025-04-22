@@ -98,7 +98,7 @@ const Navbar = () => {
               {[
                 { to: "/", label: t("home") },
                 { to: "/collection", label: t("collection") },
-                { to: "/about", label: t("about") },
+                { to: "/about", label: t("navbar.about") },
                 { to: "/contact", label: t("contact") },
               ].map((item) => (
                 <li key={item.to}>

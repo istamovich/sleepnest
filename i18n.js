@@ -9,6 +9,10 @@ const resources = {
       collection: "To'plam",
       navbar: {
         about: "Biz haqimizda",
+        pillowcase: "Yostiq kiyimi",
+        sheet: "Choyshab",
+        bedding: "Ko'rpa-to‘shak",
+        categoryWinter: "Kategoriya: Qish kolleksiyasi",
       },
       contact: "Kontaktlar",
       wishlist: "Sevimlilar",
@@ -140,6 +144,10 @@ const resources = {
       collection: "Коллекция",
       navbar: {
         about: "О нас",
+        pillowcase: "Наволочка",
+        sheet: "Простыня",
+        bedding: "Постельные принадлежности",
+        categoryWinter: "Категория: Зимняя коллекция",
       },
       contact: "Контакты",
       wishlist: "Избранное",
@@ -270,6 +278,10 @@ const resources = {
       collection: "Collection",
       navbar: {
         about: "About Us",
+        pillowcase: "Pillowcase",
+        sheet: "Bed sheet",
+        bedding: "Bedding",
+        categoryWinter: "Category: Winter Collection",
       },
       contact: "Contact",
       wishlist: "Wishlist",

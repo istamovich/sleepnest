@@ -2,8 +2,10 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { products } from '../ProductCard';
 import ReviewForm from '../ReviewForm';
+import { useTranslation } from 'react-i18next';
 
 const ProductInfo = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   const product = products.find((item) => item.id === parseInt(id || ''));
 
@@ -27,28 +29,28 @@ const ProductInfo = () => {
           <h1 className="text-3xl font-bold text-gray-800">{product.name}</h1>
           <table className="w-full table-auto border border-gray-200 text-left">
             <tbody className="text-gray-700 text-base">
-              
+
               <tr className="border-b">
-                <td className="font-semibold p-2">Yostiq kiyimi:</td>
+                <td className="font-semibold p-2"> {t("navbar.pillowcase")} :</td>
                 <td className="p-2">{product.pillowcase}</td>
               </tr>
               <tr className="border-b">
-                <td className="font-semibold p-2">Choyshab:</td>
+                <td className="font-semibold p-2">{t("navbar.sheet")} :</td>
                 <td className="p-2">{product.bedsheet}</td>
               </tr>
               <tr className="border-b">
-                <td className="font-semibold p-2">Ko'rpa-to‘shak:</td>
+                <td className="font-semibold p-2">{t("navbar.bedding")} :</td>
                 <td className="p-2">{product.duvet}</td>
               </tr>
             </tbody>
           </table>
           <p className="text-red-600 font-medium pt-4">
-            Kategoriya: Qish kolleksiyasi
+            {t("navbar.categoryWinter")}
           </p>
         </div>
       </div>
       <div>
-      <ReviewForm></ReviewForm>
+        <ReviewForm></ReviewForm>
       </div>
     </div>
   );
